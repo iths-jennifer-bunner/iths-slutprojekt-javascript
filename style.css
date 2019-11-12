@@ -2,10 +2,9 @@
 body{
     margin: 0;
     width: 100%;
-    /* overflow: hidden; */
 }
 .wrapper{
-    background-color: #C4C4C4;
+    background-color: #BF9191;
 }
 header{
     height: 150px;
@@ -41,7 +40,6 @@ label{
 .menumobile{
     display: none;
     text-align: center;
-    /* width: 100%; */
     margin: 0;
 }
 .menumobile a{
@@ -224,7 +222,7 @@ footer{
 
 /*----------Contact Page---------------*/
 .withimage{
-    height: 700px;
+    height: 400px;
     background-image: url(images/images/vernisagecorner640x427.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -234,25 +232,11 @@ footer{
     align-items: center;
     justify-content: center;
 }
-div.contactme{
-    width: 500px;
+.contactme{
+    height: 200px;
     background-color:  #BF9191;
     opacity: 0.7;
     padding-bottom: 20px;
-}
-label.contacttext{
-    margin: 0px;
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
-    letter-spacing: 2px;
-    font-size: 1rem;
-}
-textarea{
-    width: 70vw;
-    height: 20vh; 
-}
-a{
-    text-decoration: none;
 }
 
 /* ---------------form----------------------- */
@@ -349,7 +333,6 @@ textarea{
     border-radius: 5px;
 }
 button.popup{
-    width: 10%;
     height: 45px;
     border-radius: 2rem;
     background-color: #BF9191; 
@@ -376,6 +359,9 @@ button.popup{
 @media only screen and (min-width: 600px){
     header{
         font-size: 9rem;
+    }
+    .wrapper{
+        background-color: #C4C4C4;
     }
     .navmobile{
         border-bottom: 1px solid white;
@@ -405,6 +391,9 @@ button.popup{
     .paddingforbackground{
     padding: 0 200px 0 200px;
 }
+.wrapper{
+    background-color: #C4C4C4;
+}
     .top{
         height: 500px;
         position: relative;
@@ -433,14 +422,8 @@ button.popup{
     }
     section.work{
         height: 500px;
-        background-image: url(images/images/artist640x427.jpg);
+        background-image: url(images/images/Bild7.jpeg);
     }
-    .me{
-        background-image: url(images/images/artist640x427.jpg);
-        height: 500px;
-        background-position: center;
-        object-fit: cover;
-        }
     .myworkpics{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -460,7 +443,7 @@ button.popup{
         padding: 20px 20px 0 20px;
     }
     .withimage{
-        background-image: url(images/images/vernisagecorner640x427.jpg);
+        background-image: url(images/images/Bild1.jpeg);
         background-position: center;
         object-fit: cover;
         padding: 0 100px 0 100px;

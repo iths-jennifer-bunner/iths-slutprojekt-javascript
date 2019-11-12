@@ -83,11 +83,12 @@ function divHide(){
 }
 
 function checkEmpty(){
+    let p =document.querySelector('p')
     if(document.querySelector('.name').value == '' || document.querySelector('.email').value == '' || document.querySelector('.msg').value == ''){
-        alert('Fill All Fields !')
+        p.innerText = 'Fill all fields!'
         }else{
             document.querySelector('.form').submit()
-            alert('Form Submitted Successfully...')
+            p.innerText = 'Form Submitted Successfully...'
         }
     }
 
@@ -99,4 +100,4 @@ button.addEventListener('click', readMore)
 button2.addEventListener('click', readMore2)
 popup.addEventListener('click', divShow )
 x.addEventListener('click', divHide )
-submit.addEventListener('click', checkEmpty )
+submit.addEventListener('click', checkEmpty)
