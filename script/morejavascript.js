@@ -1,13 +1,10 @@
 let arrowUp = document.querySelector('.backtotop')
 let toGallery = document.querySelector('.gallery')
 let toEvents = document.querySelector('.events')
+let toAbout = document.querySelector('.aboutme')
 
 let button = document.querySelector('.button')
 let button2 = document.querySelector('.button2')
-
-let popup = document.querySelector('.popup')
-let x = document.querySelector('.close')
-let submit = document.querySelector('.submit')
 
 //----------------------------------------------------
 
@@ -28,6 +25,12 @@ function scrollToGallery(){
 function scrollToEvents(){
     window.scroll({
         top: 1500,
+        behavior: 'smooth'
+    })
+}
+function scrollToAbout(){
+    window.scroll({
+        top: 500,
         behavior: 'smooth'
     })
 }
@@ -71,33 +74,11 @@ function readMore2(){
     }
 }
 
-//-----------------------------------------------------------
-
-
-function divShow(){  //to display pop up
-    document.querySelector('.abc').style.display = 'block'
-}
-
-function divHide(){
-    document.querySelector('.abc').style.display = 'none'
-}
-
-function checkEmpty(){
-    let p =document.querySelector('p')
-    if(document.querySelector('.name').value == '' || document.querySelector('.email').value == '' || document.querySelector('.msg').value == ''){
-        p.innerText = 'Fill all fields!'
-        }else{
-            document.querySelector('.form').submit()
-            p.innerText = 'Form Submitted Successfully...'
-        }
-    }
-
-
 arrowUp.addEventListener('click', scroller)
 toGallery.addEventListener('click', scrollToGallery)
 toEvents.addEventListener('click', scrollToEvents)
+toAbout.addEventListener('click', scrollToAbout)
+
 button.addEventListener('click', readMore)
 button2.addEventListener('click', readMore2)
-popup.addEventListener('click', divShow )
-x.addEventListener('click', divHide )
-submit.addEventListener('click', checkEmpty)
+
