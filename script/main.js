@@ -8,6 +8,8 @@ let currentIndex = 0
 
 
 // Declare functions
+
+if (window.innerWidth > 600) { 
 function clickImage(event){
     let pic = event.currentTarget.querySelector("img")
     let newValue =pic.getAttribute('src')
@@ -58,7 +60,7 @@ function prev(){
     newimg.setAttribute('src', currentImage)
 }
 
-
+}
 // Initialise event listeners   
 for(let i = 0; i < pics.length; i++){
     pics[i].addEventListener('click', clickImage)

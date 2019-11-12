@@ -80,9 +80,9 @@ slider {
     background-color: #1f1f1f;
     overflow: hidden;
     position: absolute;
-    }
+}
     
-    slider > * {
+slider > * {
     position: absolute;
     display: block;
     width: 100%;
@@ -90,69 +90,64 @@ slider {
     background: #1f1f1f;
     animation: slide 12s infinite;
     overflow: hidden;
-    }
+}
     
-    slide:nth-child(1){
+slide:nth-child(1){
     left: 0%;
     animation-delay: -1s;
     background-image: url(images/images/bikini.jpg);
-    /* background-size: cover; */
     background-position: center;
-    }
+}
     
-    slide:nth-child(2){
+slide:nth-child(2){
     animation-delay: 2s;
     background-image: url(images/images/balcony.jpg);
-    /* background-size: cover; */
     background-position: center;
-    }
+}
     
-    slide:nth-child(3){
+slide:nth-child(3){
     animation-delay: 5s;
     background-image: url(images/images/underwear640x427.jpg);
-    /* background-size: cover; */
     background-position: center;
-    }
+}
     
-    slide:nth-child(4){
+slide:nth-child(4){
     left: 0%;
     animation-delay: 8s;
     background-image: url(images/images/boat.jpg);
-    /* background-size: cover; */
     background-position: center;
-    }
-    @keyframes slide {
+}
+@keyframes slide {
     0% { left: 100%; width: 100%; }
     5% { left: 0%; }
     25% { left: 0%; }
     30% { left: -100%; width: 100%; }
     30.0001% { left: -100%; width: 0%; }
     100% { left: 100%; width: 0%; }
-    }
+}
 
 .about ,.event{
-        height: 300px;
-        background-color: #C4C4C4;
-    }
+    height: 300px;
+    background-color: #C4C4C4;
+}
 
 h3{
-        font-family: 'Poiret One', cursive;
-        margin: 0px;
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-        padding: 20px 20px 0px 20px;
-    }
+    font-family: 'Poiret One', cursive;
+    margin: 0px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 20px 0px 20px;
+}
 p{
-        margin: 0px;
-        color: white;
-        font-family: 'Noto Sans', sans-serif;
-        letter-spacing: 2px;
-        line-height: 1em;
-        font-size: 1rem;
-        padding: 20px 20px 0 20px;
-        
-    }
+    margin: 0px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 1rem;
+    padding: 20px 20px 0 20px;
+}
 
 .more , .more2{
     display: none;
@@ -166,32 +161,29 @@ button{
     cursor: pointer;
 }
 section.work{
-        height: 400px;
-        background-image: url(images/images/artist640x427.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
+    height: 400px;
+    background-image: url(images/images/artist640x427.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     }
 
 .myworkpics{
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        
-    }
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 
 img {
-        max-width: 100%; 
-        height: auto;
-    }
-.pop-up.hidden{
-        display: none;
-    }
-    .overlay.hidden{
-    display: none;
-    }
+    max-width: 100%; 
+    height: auto;
+}
 
-    /*---------------------Footer--------------------------- */
+a.prev, a.next{
+    display: none; 
+}
+
+/*---------------------Footer--------------------------- */
 footer{
     text-align: center;
     background-color: #BF9191;
@@ -275,7 +267,7 @@ form{
     background-color: #fff;
 }
 h2{
-    background-color: #FEFFED;
+    background-color: rgb(250, 250, 250);
     padding: 20px 35px;
     margin: -10px -50px;
     text-align: center;
