@@ -5,11 +5,26 @@ let close = document.querySelector('.overlay')
 let pics = document.querySelectorAll('.images')
 let sliders = document.querySelectorAll('article img')
 let currentIndex = 0
-
+let arrowUp = document.querySelector('.backtotop')
+let toGallery = document.querySelector('.gallery')
+let toEvents = document.querySelector('.events')
+let toAbout = document.querySelector('.aboutme')
+let button = document.querySelector('.button')
+let button2 = document.querySelector('.button2')
+let label = document.querySelector('label')
 
 // Declare functions
 
-if (window.innerWidth > 600) { 
+function toggle(){
+    if(label.innerHTML == '☰'){
+        label.innerHTML ='&#10005;'
+    }else{
+        label.innerHTML ='&#9776;'
+    
+    }
+}
+
+if (window.innerWidth > 1000) { 
 function clickImage(event){
     let pic = event.currentTarget.querySelector("img")
     let newValue =pic.getAttribute('src')
@@ -61,13 +76,88 @@ function prev(){
 }
 
 }
+
+function readMore(){
+    let dots = document.querySelector('.dots')
+    let buttonText = document.querySelector('.button')
+    let moreText = document.querySelector('.more')
+    let biggerAbout = document.querySelector('.about')
+
+    if(dots.style.display == 'none'){
+        dots.style.display = 'inline'
+        buttonText.innerText = 'Read more'
+        moreText.style.display = 'none'
+        biggerAbout.style.height = '300px' 
+    }else{
+        dots.style.display = 'none'
+        buttonText.innerText= 'Read Less'
+        moreText.style.display = 'inline'
+        biggerAbout.style.height = '800px' 
+    }
+}
+function readMore2(){
+    let dots = document.querySelector('.dots2')
+    let buttonText2 = document.querySelector('.button2')
+    let moreText = document.querySelector('.more2')
+    let biggerEvent = document.querySelector('.event')
+
+    if(dots.style.display == 'none'){
+        dots.style.display = 'inline'
+        buttonText2.innerText = 'Read more'
+        moreText.style.display = 'none'
+        biggerEvent.style.height = '300px'
+    }else{
+        dots.style.display = 'none'
+        buttonText2.innerText= 'Read Less'
+        moreText.style.display = 'inline'
+        biggerEvent.style.height = '700px'
+    }
+}
+
+function scroller(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
+
+function scrollToGallery(){
+    window.scroll({
+        top:2020,
+        behavior: 'smooth'
+    })
+}
+
+function scrollToEvents(){
+    window.scroll({
+        top: 1500,
+        behavior: 'smooth'
+    })
+}
+function scrollToAbout(){
+    window.scroll({
+        top: 500,
+        behavior: 'smooth'
+    })
+}
+
 // Initialise event listeners   
 for(let i = 0; i < pics.length; i++){
     pics[i].addEventListener('click', clickImage)
 }
 
+label.addEventListener('click',toggle)
 close.addEventListener('click', closeImage)
 prevbutton.addEventListener('click', prev)
 nextbutton.addEventListener('click', next )
+
+arrowUp.addEventListener('click', scroller)
+toGallery.addEventListener('click', scrollToGallery)
+toEvents.addEventListener('click', scrollToEvents)
+toAbout.addEventListener('click', scrollToAbout)
+
+button.addEventListener('click', readMore)
+button2.addEventListener('click', readMore2)
+
 
 
