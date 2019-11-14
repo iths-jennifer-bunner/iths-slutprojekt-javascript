@@ -30,7 +30,7 @@ label{
     cursor: pointer;
     color: white !important;
     padding: 0 20px 0 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 70px;
     float: right;
 }
@@ -127,7 +127,6 @@ slide:nth-child(4){
 }
 
 .about ,.event{
-    height: 300px;
     background-color: #C4C4C4;
 }
 
@@ -156,7 +155,7 @@ button{
     color: white;
     font-family: 'Noto Sans', sans-serif;
     background-color: #BF9191;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 20px 20px;
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -245,8 +244,8 @@ footer{
 }
 img.close{
     position: absolute;
-    right: -14px;
-    top: -14px;
+    right: 14px;
+    top: 14px;
     cursor: pointer;
 }
 .popupContact{
@@ -335,9 +334,9 @@ button.popup{
 p.alert{
     color: black;
 }
-img.close{
+/* img.close{
     -webkit-filter: invert(100%);
-}
+} */
 
 /*---------Media queries-"Ipad"-------------*/
 @media only screen and (min-width: 425px){
@@ -347,7 +346,6 @@ img.close{
         grid-template-rows: 1fr 1fr;
     }
     .about ,.event{
-        height: 300px;
         padding-top: 50px;
     }
 }
@@ -428,7 +426,6 @@ img.close{
         padding: 0 200px 0 200px;
     }
     .about ,.event{
-        height: 300px;
         padding: 50px 200px 0 200px;
     }
     h3{

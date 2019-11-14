@@ -3,14 +3,14 @@ let popup = document.querySelector('.popup')
 let x = document.querySelector('.close')
 let submit = document.querySelector('.submit')
 let arrowUp = document.querySelector('.backtotop')
-let label = document.querySelector('label')
+let label = document.querySelector('.material-icons')
+
 
 function toggle(){
-    if(label.innerHTML == '☰'){
-        label.innerHTML ='&#10005;'
+    if(label.innerHTML == 'menu'){
+        label.innerHTML ='close'
     }else{
-        label.innerHTML ='&#9776;'
-    
+        label.innerHTML ='menu'
     }
 }
 

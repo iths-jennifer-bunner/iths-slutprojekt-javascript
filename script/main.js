@@ -11,16 +11,15 @@ let toEvents = document.querySelector('.events')
 let toAbout = document.querySelector('.aboutme')
 let button = document.querySelector('.button')
 let button2 = document.querySelector('.button2')
-let label = document.querySelector('label')
+let label = document.querySelector('.material-icons')
 
 // Declare functions
 
 function toggle(){
-    if(label.innerHTML == '☰'){
-        label.innerHTML ='&#10005;'
+    if(label.innerHTML == 'menu'){
+        label.innerHTML ='close'
     }else{
-        label.innerHTML ='&#9776;'
-    
+        label.innerHTML ='menu'
     }
 }
 
@@ -33,9 +32,9 @@ function clickImage(event){
     div.classList.remove('hidden')
     let newDiv = document.querySelector('.image')
     newDiv.setAttribute('src', newValue)
-
     let overlay =document.querySelector('.overlay.hidden')
     overlay.classList.remove('hidden')
+    
 }
 
 function closeImage(){
@@ -86,13 +85,11 @@ function readMore(){
     if(dots.style.display == 'none'){
         dots.style.display = 'inline'
         buttonText.innerText = 'Read more'
-        moreText.style.display = 'none'
-        biggerAbout.style.height = '300px' 
+        moreText.style.display = 'none' 
     }else{
         dots.style.display = 'none'
         buttonText.innerText= 'Read Less'
         moreText.style.display = 'inline'
-        biggerAbout.style.height = '800px' 
     }
 }
 function readMore2(){
@@ -105,12 +102,10 @@ function readMore2(){
         dots.style.display = 'inline'
         buttonText2.innerText = 'Read more'
         moreText.style.display = 'none'
-        biggerEvent.style.height = '300px'
     }else{
         dots.style.display = 'none'
         buttonText2.innerText= 'Read Less'
         moreText.style.display = 'inline'
-        biggerEvent.style.height = '700px'
     }
 }
 
@@ -150,12 +145,10 @@ label.addEventListener('click',toggle)
 close.addEventListener('click', closeImage)
 prevbutton.addEventListener('click', prev)
 nextbutton.addEventListener('click', next )
-
 arrowUp.addEventListener('click', scroller)
 toGallery.addEventListener('click', scrollToGallery)
 toEvents.addEventListener('click', scrollToEvents)
 toAbout.addEventListener('click', scrollToAbout)
-
 button.addEventListener('click', readMore)
 button2.addEventListener('click', readMore2)
 
