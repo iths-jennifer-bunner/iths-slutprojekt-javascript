@@ -460,6 +460,7 @@ p.alert{
 img{
     height: auto;
     max-width: 100%;
+    cursor: pointer;
 }
 .pop-up.hidden{
     display: none;
