@@ -157,10 +157,12 @@ function scrollToAbout(){
 }
 function divShow(){  //to display pop up
     document.querySelector('.abc').style.display = 'block'
+    
 }
 
 function divHide(){
     document.querySelector('.abc').style.display = 'none'
+    
 }
 
 function checkEmpty(event){
@@ -168,11 +170,18 @@ function checkEmpty(event){
     if(document.querySelector('.name').value == '' || document.querySelector('.email').value == '' || document.querySelector('.msg').value == ''){
         p.innerText = 'Fill all fields!'
     }else{
-        document.querySelector('.form').submit()
         p.innerText = 'Form Submitted Successfully...'
+        setTimeout(function(){
+        document.querySelector('.form').submit()
+        
+        },3000)
+
     }
+    
+    
 }
 
+    
 label.addEventListener('click',toggle)
 arrowUp.addEventListener('click', scroller)
 

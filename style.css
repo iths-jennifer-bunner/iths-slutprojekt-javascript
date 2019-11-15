@@ -308,7 +308,6 @@ textarea{
     padding-left: 40px;
     font-size: 1rem;
     font-family:'Noto Sans', sans-serif;
-    margin-bottom: 30px;
 }
 .submit{
     text-decoration: none;
@@ -318,10 +317,11 @@ textarea{
     background-color: #BF9191;
     color: #fff;
     border: 1px solid rgb(221, 198, 198) ;
-    /* padding: 10px 0; */
+    padding: 10px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
+    margin:0;
 }
 button.popup{
     height: 45px;
@@ -335,9 +335,7 @@ button.popup{
 p.alert{
     color: black;
 }
-/* img.close{
-    -webkit-filter: invert(100%);
-} */
+
 
 /*---------Media queries-"Ipad"-------------*/
 @media only screen and (min-width: 425px){
@@ -345,9 +343,6 @@ p.alert{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    }
-    .about ,.event{
-        padding-top: 50px;
     }
 }
 
@@ -427,7 +422,7 @@ p.alert{
         padding: 0 200px 0 200px;
     }
     .about ,.event{
-        padding: 50px 200px 0 200px;
+        padding: 0 200px 0 200px;
     }
     h3{
         font-size: 2rem;   
