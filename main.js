@@ -174,7 +174,7 @@ function checkEmpty(event){
         setTimeout(function(){
         document.querySelector('.form').submit()
         
-        },3000)
+        },1500)
 
     }
     
