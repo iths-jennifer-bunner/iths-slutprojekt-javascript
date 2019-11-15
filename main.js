@@ -19,7 +19,6 @@ let pathname = window.location.pathname.split('/')
 let rightPath = pathname[pathname.length-1]
 const MOBILE_MODE = window.innerWidth < 1000
 
-
 // Declare functions
 if( rightPath == 'index.html'){
     if(MOBILE_MODE){
@@ -46,7 +45,6 @@ if( rightPath == 'index.html'){
     submit.addEventListener('click', checkEmpty)
 
 }
-
 
 function toggle(){
     if(label.innerHTML == 'menu'){
@@ -101,7 +99,6 @@ function prev(){
     let newimg = document.querySelector('.image')
     newimg.setAttribute('src', currentImage)
 }
-
 function readMore(){
     let dots = document.querySelector('.dots')
     let buttonText = document.querySelector('.button')
@@ -130,7 +127,6 @@ function readMore2(){
         moreText.style.display = 'inline'
     }
 }
-
 function scroller(){
     window.scrollTo({
         top: 0,
@@ -159,12 +155,10 @@ function divShow(){  //to display pop up
     document.querySelector('.abc').style.display = 'block'
     
 }
-
 function divHide(){
     document.querySelector('.abc').style.display = 'none'
     
 }
-
 function checkEmpty(event){
     let p =document.querySelector('p.alert')
     if(document.querySelector('.name').value == '' || document.querySelector('.email').value == '' || document.querySelector('.msg').value == ''){
@@ -173,15 +167,10 @@ function checkEmpty(event){
         p.innerText = 'Form Submitted Successfully...'
         setTimeout(function(){
         document.querySelector('.form').submit()
-        
         },1500)
-
     }
-    
-    
 }
 
-    
 label.addEventListener('click',toggle)
 arrowUp.addEventListener('click', scroller)
 

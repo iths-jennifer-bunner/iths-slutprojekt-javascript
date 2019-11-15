@@ -22,9 +22,7 @@ header{
 div.header{
     background-color: #BF9191;
 }
-
 /*-------------navigation bar--------------------- */
-
 label{
     display: block;
     cursor: pointer;
@@ -64,11 +62,9 @@ a:hover{
     line-height: 70px;
 }
 #toggle:checked + .menumobile{
-    display: block;  /* här säger vi att den endast syns när det är checked därför behöver vi ändra till display block och inte display none*/
+    display: block; 
 }
-
 /* ------------slider---------------- */
-
 .top{
     height: 500px;
     margin: 0px;
@@ -125,11 +121,9 @@ slide:nth-child(4){
     30.0001% { left: -100%; width: 0%; }
     100% { left: 100%; width: 0%; }
 }
-
 .about ,.event{
     background-color: #C4C4C4;
 }
-
 h3{
     font-family: 'Poiret One', cursive;
     margin: 0px;
@@ -147,7 +141,6 @@ p{
     font-size: 1rem;
     padding: 20px;
 }
-
 .more , .more2{
     display: none;
 }
@@ -177,7 +170,6 @@ img {
     max-width: 100%; 
     height: auto;
 }
-
 a.prev, a.next{
     display: none; 
     cursor: pointer;
@@ -335,7 +327,6 @@ button.popup{
 p.alert{
     color: black;
 }
-
 
 /*---------Media queries-"Ipad"-------------*/
 @media only screen and (min-width: 425px){
