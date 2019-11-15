@@ -145,7 +145,7 @@ p{
     letter-spacing: 2px;
     line-height: 1em;
     font-size: 1rem;
-    padding: 20px 20px 0 20px;
+    padding: 20px;
 }
 
 .more , .more2{
@@ -155,7 +155,7 @@ button{
     color: white;
     font-family: 'Noto Sans', sans-serif;
     background-color: #BF9191;
-    margin: 20px 0 20px 20px;
+    margin: 20px;
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -180,6 +180,7 @@ img {
 
 a.prev, a.next{
     display: none; 
+    cursor: pointer;
 }
 
 /*---------------------Footer--------------------------- */
@@ -317,7 +318,7 @@ textarea{
     background-color: #BF9191;
     color: #fff;
     border: 1px solid rgb(221, 198, 198) ;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
@@ -465,8 +466,9 @@ p.alert{
 
 .pop-up{
     position: fixed;
-    top: 10%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 img{
